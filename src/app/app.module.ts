@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { PostercardComponent } from './shared/postercard/postercard.component';
 import { PostdetailsComponent } from './shared/postdetails/postdetails.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { PostdetailsComponent } from './shared/postdetails/postdetails.component
     HomeComponent,
     PostercardComponent,
     PostdetailsComponent,
+    ErrorPageComponent,
   ],
   imports: [
     BrowserModule,

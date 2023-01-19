@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ErrorPageComponent } from './error-page/error-page.component';
 import { HomeComponent } from './home/home.component';
 import { PostdetailsComponent } from './shared/postdetails/postdetails.component';
 
@@ -12,7 +13,9 @@ const routes: Routes = [
   .then(mod=>mod.ContentModule)},
 
   {path:'tvshows', loadChildren:()=>import('./content/content.module')
-   .then(mod=>mod.ContentModule)}
+   .then(mod=>mod.ContentModule)},
+
+   {path:'**', component:ErrorPageComponent}
 
 ];
 
