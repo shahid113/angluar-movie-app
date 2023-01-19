@@ -1,0 +1,11 @@
+<div class="card mx-3 bg-dark" style="width: 10rem;">
+   <a [routerLink]="isMovie?'/movies/'+item.id:'/tvshows/'+item.id">
+    <img [src]="'https://image.tmdb.org/t/p/w220_and_h330_face/' + item['poster_path']" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-title" *ngIf="item.title ?? item.name">
+        {{item.title??item.name | slice:0:14}}
+      </p>
+      <p>{{item.release_date??item.first_air_date}}</p>
+    </div>
+   </a>
+  </div>

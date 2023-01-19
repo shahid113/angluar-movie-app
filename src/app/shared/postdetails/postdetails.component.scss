@@ -1,0 +1,29 @@
+.main-container{
+    height: 80vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .image-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card-container{
+        background-color: transparent;
+        border: none;
+        color: white;
+        margin: auto;
+    }
+}
+
+.second-container{
+    width: 80vw;
+    margin: auto;
+    margin-top: 10px;
+}

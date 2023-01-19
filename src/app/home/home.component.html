@@ -1,0 +1,22 @@
+<section class="cover-photo">
+    <h1>WELCOME TO MOVIE MASALA</h1>
+</section>
+
+
+<div class="main-container">
+    <hr>
+    <a routerLink="/movies" style="text-decoration: none;"><h3 style="color:white">Movies</h3></a>
+    <section class="movies_container">
+        <div *ngFor="let movie of movieList">
+            <app-postercard [item]="movie" [isMovie]='true'></app-postercard>
+      </div>
+    </section>
+    <hr>
+    <a routerLink="/tvshows" style="text-decoration: none;"> <h3 style="color:white;">Tv Shows</h3></a>
+    <section class="tvshows_container">
+        <div *ngFor="let tvshow of tvshowList">
+            <app-postercard [item]="tvshow"></app-postercard>
+        </div>
+    </section>
+    <hr>
+</div>

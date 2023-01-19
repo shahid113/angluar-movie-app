@@ -1,0 +1,21 @@
+<h1 style="text-align: center; color:white">{{contentType |uppercase}}</h1>
+
+<div class="container mt-3">
+
+    <div *ngFor="let item of items| paginate : {
+            itemsPerPage: tableSize,
+            currentPage: page,
+            totalItems: count };
+            let i = index">
+     <app-content-card [item]="item" [isMovie]="movieFlag"></app-content-card>
+    </div>
+</div>
+
+  <div class="d-flex justify-content-center pagination">
+    <pagination-controls
+      previousLabel="Prev"
+      nextLabel="Next"
+      (pageChange)="onTableDataChange($event)"
+    >
+    </pagination-controls>
+  </div>
