@@ -4,6 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Live Demo : https://movie-masala.netlify.app/
 
+![moviemasala](https://user-images.githubusercontent.com/83212052/213613506-82f8468a-2b9e-4d84-b303-ed842f920f8d.jpg)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
